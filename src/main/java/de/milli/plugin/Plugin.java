@@ -14,6 +14,7 @@ public final class Plugin extends JavaPlugin {
         getLogger().info("Das plugin funktioniert");
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new TNTExplo(), this);
+
         pm.registerEvents(new JoinEvent(), this);
 
 
