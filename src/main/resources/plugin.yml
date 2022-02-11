@@ -1,0 +1,3 @@
+name: Plugin
+version: '${project.version}'
+main: de.milli.plugin.Plugin
