@@ -15,6 +15,8 @@ public final class Plugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        System.out.println("BiVieh videos yeah");
+
         plugin = this;
         getLogger().info("Das plugin funktioniert");
         PluginManager pm = Bukkit.getPluginManager();
