@@ -8,6 +8,6 @@ import org.bukkit.event.player.PlayerJoinEvent;
 public class JoinEvent implements Listener {
     @EventHandler
     public static void onJoin(PlayerJoinEvent event){
-        event.setJoinMessage(ChatColor.GOLD + "Deine Mutter ist Schwanger von deinem Haustier");
+        event.setJoinMessage(ChatColor.GOLD + "Programmieren lernen ist schwer");
     }
 }
