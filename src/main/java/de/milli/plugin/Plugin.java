@@ -16,7 +16,7 @@ public final class Plugin extends JavaPlugin {
     @Override
     public void onEnable() {
         plugin = this;
-        getPlugin().getServer().shutdown();
+        /*getPlugin().getServer().shutdown();*/
         System.out.println("BiVieh videos yeah");
 
         plugin = this;
