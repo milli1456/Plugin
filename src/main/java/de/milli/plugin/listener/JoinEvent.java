@@ -13,7 +13,7 @@ public class JoinEvent implements Listener {
         String teamName = "Alpha";
         event.setJoinMessage(ChatColor.GOLD + "Programmieren lernen ist schwer");
         for (Player player: Bukkit.getOnlinePlayers()) {
-            player.sendMessage("Der Spieler "+ event.getPlayer().getName() + " sagt " + player.getName() + " hallo");
+            player.sendMessage("Der Spieler ");
 
         }
 
@@ -22,7 +22,7 @@ public class JoinEvent implements Listener {
                 event.getPlayer().sendMessage("Dein Mate " + player + " ist online");
             }
         }
-         */
+      */
 
     }
 }
