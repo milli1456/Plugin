@@ -1,7 +1,6 @@
 package de.milli.plugin;
 
-import de.milli.plugin.command.HealCommand;
-import de.milli.plugin.command.KillAll;
+import de.milli.plugin.command.*;
 import de.milli.plugin.listener.JoinEvent;
 import de.milli.plugin.listener.OnMoveEvent;
 import de.milli.plugin.listener.TNTExplo;
@@ -19,7 +18,11 @@ public final class Plugin extends JavaPlugin {
         plugin = this;
         System.out.println("BiVieh videos yeah");
         getCommand("heal").setExecutor(new HealCommand());
+        getCommand("weapon").setExecutor(new Weapon());
+        getCommand("itemsearch").setExecutor(new Item());
+        getCommand("itemsearch2").setExecutor(new Item2());
         plugin = this;
+
         getLogger().info("Das plugin funktioniert");
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new TNTExplo(), this);

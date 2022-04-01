@@ -13,11 +13,11 @@ public class JoinEvent implements Listener {
         String teamName = "Alpha";
         event.setJoinMessage(ChatColor.GOLD + "Programmieren lernen ist schwer");
         for (Player player: Bukkit.getOnlinePlayers()) {
-            player.sendMessage("Der Spieler ");
+            player.sendMessage("Willkommen auf den Localhost mit corona ");
 
         }
-
-         /*for (Player player: Bukkit.getOnlinePlayers()) {
+        /*
+         for (Player player: Bukkit.getOnlinePlayers()) {
             if(player == teamName){
                 event.getPlayer().sendMessage("Dein Mate " + player + " ist online");
             }

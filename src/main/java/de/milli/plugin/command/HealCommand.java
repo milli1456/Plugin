@@ -9,15 +9,21 @@ public class HealCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if(sender instanceof Player ){
+        Player player = (Player) sender;
+        player.setPlayerListName("§c" + player.getName());
+        player.sendMessage("test");
+                /*if(sender instanceof Player ){
             Player player = (Player) sender;
-            if (player.hasPermission("Heal Permission")){
-            }else player.sendMessage("§cNo Permission!");
-            player.setHealth((int) player.getHealthScale());
-            player.setFoodLevel((int) player.getHealthScale());
-            player.sendMessage("§aDu bist nun geheilt");
+            if (player.hasPermission("Heal Permission")) {
+                if (args.length == 0) {
+                    player.setHealth((int) player.getHealthScale());
+                    player.setFoodLevel((int) player.getHealthScale());
+                    player.sendMessage("§aDu bist nun geheilt");
+                } else player.sendMessage("§6Bitte nutze /heal");
+            } else player.sendMessage("§cNo Permission!");
         }else
             sender.sendMessage("Command is invalid");
+         */
         return false;
     }
 }

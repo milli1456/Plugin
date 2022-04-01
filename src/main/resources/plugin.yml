@@ -6,3 +6,6 @@ commands:
   killall:
   heal:
     description: "Heals all life points to the Player"
+  weapon:
+  itemsearch:
+  itemsearch2:

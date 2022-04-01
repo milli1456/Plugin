@@ -13,7 +13,7 @@ import org.bukkit.event.entity.EntityExplodeEvent;
 
 public class TNTExplo implements Listener {
 
-    @EventHandler
+    /*@EventHandler
     public static void onTNT(EntityExplodeEvent e){
         Location loc = e.getLocation();
         for (Player player : Bukkit.getOnlinePlayers()) {
@@ -28,5 +28,5 @@ public class TNTExplo implements Listener {
            tnt.setFuseTicks(0);
         }
 
-    }
+    }*/
 }
