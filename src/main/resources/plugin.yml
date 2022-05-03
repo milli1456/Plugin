@@ -1,7 +1,7 @@
 name: Plugin
 version: '${project.version}'
 main: de.milli.plugin.Plugin
-api: 17
+api: 16
 commands:
   killall:
   heal:

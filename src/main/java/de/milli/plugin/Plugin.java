@@ -1,9 +1,7 @@
 package de.milli.plugin;
 
 import de.milli.plugin.command.*;
-import de.milli.plugin.listener.JoinEvent;
-import de.milli.plugin.listener.OnMoveEvent;
-import de.milli.plugin.listener.TNTExplo;
+import de.milli.plugin.listener.*;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
@@ -26,10 +24,13 @@ public final class Plugin extends JavaPlugin {
         getLogger().info("Das plugin funktioniert");
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new TNTExplo(), this);
-
         pm.registerEvents(new JoinEvent(), this);
+        pm.registerEvents(new EntityDamage(), this);
         pm.registerEvents(new OnMoveEvent(), this);
+        pm.registerEvents(new DamageByBlockEvent(), this);
         getCommand("killall").setExecutor(new KillAll());
+        setup();
+
     }
 
     @Override
